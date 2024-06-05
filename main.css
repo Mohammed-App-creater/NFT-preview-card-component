@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:wght@500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    height: calc(100vh - 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    flex-direction: column;
+
+}
+
+.container {
+    height: 605px;
+    width: 355px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow: 
+                0 35px 0px 20px rgba(11, 21, 35, 0.7),
+                0 30px 2px 50px rgba(12, 23, 45, 0.5)
+                ;
+
+}
+
+.imgbx {
+    height: 305px;
+    width: 305px;
+    position: relative;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsla(178, 100%, 50%, 0.658);
+    filter: brightness(1.3);
+}
+
+.container img {
+    height: 305px;
+    width: 305px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.035em;
+    margin-bottom: 25px;
+}
+
+.container p {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.crpto {
+    display: flex;
+    align-items: inline;
+    text-align: center;
+    font-size: 18px;
+}
+
+.crpto .ethereum {
+    height: 30px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.crpto .cloock {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.crpto .eth {
+    color: hsl(178, 100%, 50%);
+    padding: 5px 0 0 0;
+    margin-right: 60px;
+}
+
+.crpto .days {
+    color: hsl(178, 100%, 50%);
+    padding: 5px 0 0 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin: 25px 0 15px;
+}
+
+.profil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profil img {
+    height: 34px;
+    width: 34px;
+    outline: 2px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.profil a {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.container a:active {
+    color: hsl(178, 100%, 50%);
+}
+
+.cub:active {
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 667px) {
+    /* Styles for smaller screens here */
+
+    body {
+        margin: 0 25px 0;
+    }
+
+    .container {
+        width: 335px;
+        height: 545px;
+        padding: 25px;
+    }
+
+    .imgbx {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 15px;
+    }
+
+    .container .cub {
+        width: 280px;
+        height: 280px;
+    }
+
+    .container a{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .container p{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .crpto .ethereum {
+        height: 24px;
+        width: 15px;
+        margin-right: 10px;
+    }
+    
+    .crpto .cloock {
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+    }
+    
+    .crpto .eth {
+        color: hsl(178, 100%, 50%);
+        padding: 0 0 0.1px;
+    }
+    
+    .crpto .days {
+        color: hsl(178, 100%, 50%);
+        padding: 0 0 0.1px;
+    }
+    
+
+
+    .profil img {
+        height: 30px;
+        width: 30px;
+    }
+
+}
